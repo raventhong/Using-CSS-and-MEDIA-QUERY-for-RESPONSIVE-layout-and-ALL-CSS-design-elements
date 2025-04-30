@@ -1,0 +1,71 @@
+* {
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+h1, h2, h3 {
+    color: #67d867;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 15%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "li1 li2 li3 ."
+    "li4 li5 . .";
+    grid-gap: 10px;
+}
+
+nav ul li:nth-child(1) {
+    grid-area: li1;
+}
+
+nav ul li:nth-child(2) {
+    grid-area: li2;
+}
+
+nav ul li:nth-child(3) {
+    grid-area: li3;
+}
+
+nav ul li:nth-child(4) {
+    grid-area: li4;
+}
+
+nav ul li:nth-child(5) {
+    grid-area: li5;
+}
+
+nav ul li {
+    background-color: gray;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #52af7c;
+}
+
+main a {
+    color: inherit;
+}
+
+aside {
+    padding: 10px;
+    background-color: #eeeeee;
+    box-shadow: 0 0 3px 0 gray;
+}
+
+footer {
+    text-align: center;
+}
